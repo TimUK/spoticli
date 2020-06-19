@@ -2,27 +2,27 @@
 
 Simple console application to play with the Spotify API from python. Control Spotify from the command line.
 
-##Commands
-####play
+## Commands
+#### play
 Start/resume playback on the active device. If no active device is found, it will attempt to play on the first available device.
 
-####pause
+#### pause
 Pause playback
 
-####next
+#### next
 Skip forward
 
-####previous
+#### previous
 Skip backward
 
-####devices
+#### devices
 List available devices
 
-####playlist
+#### playlist
 List all songs in the current playing playlist
 
-####saved
+#### saved
 List songs in the current users saved songs
 
-####quit
+#### quit
 Quit.
