@@ -8,14 +8,14 @@ scope = 'user-library-read user-modify-playback-state user-read-currently-playin
 
 running = True
 
-username = "timj167"
+username = input("Spotify username: ")
 
 token = util.prompt_for_user_token(username, scope, SpotifyApp.client_id, SpotifyApp.client_secret, 'http://google.com')
 
 if token:
     sp = spotipy.Spotify(auth=token)
     while running:
-        cmd = input("SpotiCMD> ")
+        cmd = input("SpotiCLI> ")
         if cmd == 'quit':
             running = False
         elif cmd == 'saved':
